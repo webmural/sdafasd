@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 1200 1200">
+  <title>jel</title>
+  <style>
+    svg { background: #508 }
+    circle { fill: #1e1; filter:url(#jel)  }
+  </style>
+  <filter id="jel">
+    <feTurbulence
+      type="turbulence"
+      baseFrequency="0.01"
+      numOctaves="9"
+      result="turbulence" />
+    <feDisplacementMap
+      in2="turbulence"
+      in="SourceGraphic"
+      scale="100"
+      xChannelSelector="R"
+      yChannelSelector="G" />
+  </filter>
+  <circle cx="50%" cy="50%" r="20%" />
+</svg>
